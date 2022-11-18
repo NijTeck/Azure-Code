@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "name": {
+            "value": "Azure-VPN-McLean"
+        },
+        "gatewayType": {
+            "value": "Vpn"
+        },
+        "sku": {
+            "value": "VpnGw2AZ"
+        },
+        "vpnType": {
+            "value": "RouteBased"
+        },
+        "vpnGatewayGeneration": {
+            "value": "Generation2"
+        },
+        "subnetId": {
+            "value": "/subscriptions/690b6318-dc28-4d24-8977-1878b44cd726/resourceGroups/VPN-testing/providers/Microsoft.Network/virtualNetworks/Azure-VPN-McLean/subnets/GatewaySubnet"
+        },
+        "newPublicIpAddressName": {
+            "value": "PIP-VPN-McLean"
+        },
+        "enableBgp": {
+            "value": true
+        },
+        "asn": {
+            "value": 65515
+        },
+        "customBgpIpAddress": {
+            "value": []
+        }
+    }
+}
